@@ -195,6 +195,7 @@ public class ColorComponents extends Component {
             }
             clicked = true;
         } else {
+            sbfocused
             sbfocused = false;
             afocused = false;
             hfocused = false;
@@ -327,7 +328,7 @@ public class ColorComponents extends Component {
         }
 
         Render2DUtil.drawCircle(matrixStack, (float) (x + width - 10),
-                (float) (y + getfloat) (y + getTextOffsetY() + 4), 6,
+                (float) (y + getTextOffsetY() + 4), 6,
                 ColorUtil.injectAlpha(getColorSetting().getValue(), 255));
 
         if (pickerHeight <= 1) {
@@ -374,4 +375,4 @@ public class ColorComponents extends Component {
         Render2DUtil.drawCircle(matrixStack, spos, bpos, 2, new Color(-1));
         return true;
     }
-            }
+}
